@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* title entrance */
+
+@keyframes entrance {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(-65px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
+
+.titleAnim {
+  animation: entrance 2s ease 0s 1 normal forwards;
+  -webkit-animation: entrance 2s ease 0s 1 normal forwards;
+}
+
+/* gift dropped */
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-250px) rotate(-200deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.drop {
+  animation: drop 2s ease 0s 1 normal forwards;
+  -webkit-animation: drop 2s ease 0s 1 normal forwards;
+}
+
+/* open gift */
+
+@keyframes animateTop {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes animateBottom {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.animateTop {
+  animation: animateTop 0.8s ease forwards;
+  -webkit-animation: animateTop 0.8s ease forwards;
+}
+
+.animateBottom {
+  animation: animateBottom 0.8s 0.8s ease forwards;
+  -webkit-animation: animateBottom 0.8s 0.8s ease forwards;
+}
+
+/* 2cd title blink */
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 3s ease-in-out 2s infinite normal forwards;
+  -webkit-animation: blink 3s ease-in-out 2s infinite normal forwards;
+}
