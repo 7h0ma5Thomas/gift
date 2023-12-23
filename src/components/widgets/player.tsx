@@ -12,7 +12,7 @@ export default function Player({ className }: PlayerProps) {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/ME0goN-Uppg?si=Zl5xOHfNgXb6sMW9"
+          src="https://www.youtube.com/embed/IzbpLntKbI4?si=FplwqlAbgZMnn4XP"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
